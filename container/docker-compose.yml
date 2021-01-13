@@ -4,7 +4,7 @@ services:
       context: ./env
       target: database
     volumes:
-      - nodedb:./
+      - nodedb:/home/$USER/
     ports:
       - "27017:27017"
     command: mongod
@@ -18,7 +18,7 @@ services:
     depends_on:
       - database
     volumes:
-      - nodeapp:./
+      - nodeapp:/home/$USER/
     working_dir: /usr/src/app
     ports:
       - "80:3000"
