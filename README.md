@@ -25,3 +25,19 @@ For this build `docker-compose` is used. The file can be found [HERE](container/
 ### Docker-Compose
 
 The `docker-compose.yml` file therefore becomes our main hub of operation. This file breaks down both containers into stages, and each stage has its own operations. We can add commands, environment variables, volumes, dependancies and many other functionalities. This file will run specific stages for each container and therefore resulting in 2 containers being created at once.
+
+### Ready Images
+
+Images are available under the name of `deviljin112/eng74_nodejs_production` to specify which container you would like to pull use the tag `:app` or `:db`. These images can be loaded and started in seconds and full application deployed.
+
+### Building Images
+
+To build the images yourself:
+
+- Clone the repository
+- Navigate to the repository with your terminal
+- Open the `container` folder
+- Run `docker-compose build`
+- Run `docker-compose up -d`
+- Open browser and go to `localhost`
+- Success
