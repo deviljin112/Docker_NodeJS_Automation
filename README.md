@@ -42,4 +42,3 @@ To build the images yourself:
 - Open browser and go to `localhost`
 - Success
 
-testing jenkins deployment
